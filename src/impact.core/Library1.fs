@@ -17,4 +17,10 @@ module Domain =
     [<CLIMutable>]
     type Solution = { Title:string; Impacts:Impact list}
 
-    let solves target source = printfn "knows"
+    let solves (impact:Impact) (solution:Solution) = 
+        printfn "%s solves %s" solution.Title impact.Title
+
+    let solution = { Title="great idea"; Impacts=[]}
+    let impact = { Title="big problem"; Priority=0; SubImpacts=[]}
+
+    solution |> solves impact
