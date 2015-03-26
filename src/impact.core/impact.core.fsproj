@@ -49,7 +49,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="Library1.fs" />
+    <Compile Include="Domain.fs" />
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
